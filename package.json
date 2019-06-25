@@ -1,0 +1,29 @@
+{
+  "name": "cpu-stress",
+  "version": "1.0.0",
+  "main": "app/main.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "electron app/main",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "build": {
+    "appId": "dev.didy.cpustress",
+    "artifactName": "CPUStress.${ext}",
+    "files": [
+      "app"
+    ],
+    "win": {
+      "icon": "app/icon.ico"
+    }
+  },
+  "devDependencies": {
+    "electron": "^5.0.5",
+    "electron-builder": "^20.44.4"
+  },
+  "dependencies": {
+    "big-integer": "^1.6.44"
+  }
+}
